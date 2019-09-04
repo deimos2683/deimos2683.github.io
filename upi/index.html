@@ -8,9 +8,12 @@
 	
 	<script>
 	function myf(){
-	  var inp2 = window.location.href.split('?')[1];
-	  var inp1 = "upi://pay?pa=pa1tech@ybl&pn=Pavan&tn=IITM&am=";
-	  window.location = inp1.concat(inp2);
+	  var inp = window.location.href.split('?')[1];
+	  var inp2 = inp.split('&')[0];
+	  var inp4 = inp.split('&')[1];
+	  var inp1 = "upi://pay?pa=";
+	  var inp3 = "&pn=Whomsoever&tn=GoAnveshak&am=";
+	  window.location = inp1.concat(inp2,inp3,inp4);
 	};
 	
 	$(window).on('load', function() { // makes sure the whole site is loaded 
