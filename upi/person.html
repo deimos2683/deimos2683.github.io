@@ -14,12 +14,10 @@
 	<script>
 	function myf(){
 	
-	  var inp = window.location.href.split('?')[1];
-	  var inp2 = inp.split('&')[0];
-	  var inp4 = inp.split('&')[1];
+	  var inp2 = window.location.href.split('?')[1];
 	  var inp1 = "upi://pay?pa=";
-	  var inp3 = "&pn=Whomsoever&tn=GoAnveshak&am=";
-	  var final = inp1.concat(inp2,inp3,inp4);
+	  var inp3 = "&pn=Whomsoever";
+	  var final = inp1.concat(inp2,inp3);
 
 	  if ( (window.screen.width<800) ){
 	     window.location = final;
@@ -42,27 +40,7 @@
 <h3>Pay from any UPI app</h3>
 <div id="qrcode"></div>
 
-<style>
-h3{
-  font-size: 1.5em;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  background-color: #ee682a;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  margin-left: 15%;
-  margin-right: 15%;
-}
 
-#qrcode{
-  position: absolute;
-  z-index: -1;
-  width: auto;
-  height: auto;
-  left: 40%;
-  top: 30%;
-}
-</style>
 
 <!--- PRELOADER -------->
 <div id = "preloader">
@@ -237,7 +215,27 @@ h3{
 
 </div>
 
-
+<style>
+	h3{
+	  font-size: 1.5em;
+	  font-family: Arial, Helvetica, sans-serif;
+	  text-align: center;
+	  background-color: #ee682a;
+	  padding-top: 1%;
+	  padding-bottom: 1%;
+	  margin-left: 15%;
+	  margin-right: 15%;
+	}
+	
+	#qrcode{
+	  position: absolute;
+	  z-index: -1;
+	  width: auto;
+	  height: auto;
+	  left: 40%;
+	  top: 30%;
+	}
+</style>
 
 <style>
 	svg{
