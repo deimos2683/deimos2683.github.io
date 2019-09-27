@@ -1,0 +1,27 @@
+<head>
+
+	<title> WhatsApp </title>
+	<link rel="shortcut icon" href="/assets/favicon.ico">
+	<meta property="og:title" content="WhatsApp Click to Chat" />
+	<meta property="og:image" content="/assets/og.jpg" />
+	<meta property="og:url" content="http://anveshak.team/" />	
+	<meta property="og:description" content="Click to chat" />
+
+	<script type='text/javascript' src='http://code.jquery.com/jquery-1.8.2.js'></script>
+
+	<script>
+        var inp = window.location.href.split('?')[1];
+        var inp1 = "Click to chat with (+91)-";
+        var descrip = inp1.concat(inp);
+        $('meta[name=og\\:description]').attr('content', descrip);
+
+        $(document).ready(function(){
+        var inp2 = "https://wa.me/91"
+        var final = inp2.concat(inp);
+        window.location = final;
+        });
+	
+
+	
+	</script>
+</head>
