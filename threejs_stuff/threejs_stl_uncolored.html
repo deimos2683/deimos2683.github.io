@@ -7,9 +7,9 @@
 	</head>
 	<body>
 		<script type="module">
-			import * as THREE from '/node_modules/three/build/three.module.js';
-			import Stats from '/node_modules/three/examples/jsm/libs/stats.module.js';
-			import { STLLoader } from '/node_modules/three/examples/jsm/loaders/STLLoader.js';
+			import * as THREE from './three.module.js';
+			import Stats from './stats.module.js';
+			import { STLLoader } from './STLLoader.js';
 			var container, stats;
 			var camera, cameraTarget, scene, renderer;
 			init();
@@ -33,12 +33,11 @@
 				plane.position.y = - 0.5;
 				scene.add( plane );
 				plane.receiveShadow = true;
+				var loader = new STLLoader();
 				
-                var loader = new STLLoader();
-                
 				// Inserting file
 				var material = new THREE.MeshPhongMaterial( { color: 0xA8A9A8, specular: 0x111111, shininess: 200 } );
-				loader.load( '/models/simple_dora.stl', function ( geometry ) {
+				loader.load( './simple_dora.stl', function ( geometry ) {
 					var mesh = new THREE.Mesh( geometry, material );
 					mesh.position.set( 0, -0.1, 0 );
 					mesh.rotation.set( - Math.PI / 2, 0, Math.PI / 2 );
