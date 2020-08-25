@@ -5,13 +5,44 @@ body {
 }
 canvas{display:block}
 h1 {
+  /**/
   color: #fff;
   font-family: "Source Sans Pro";
   font-size: 350%;
   font-weight: 900;
   text-align: center;
+
+  /*animation: head 1s infinite;*/
+}
+h1:before{
+	content:"Happy Birthday Tarun!";
+	animation: head 3s 5;
+	animation-timing-function: linear;
 }
 
+@keyframes head {
+  0% { content:'Happy Birthday Tarun!'; }
+  5% { content:'Happy Birthday Jayesh!'; }
+  10% { content:'Happy Birthday Swathi!'; }
+  15% { content:'Happy Birthday Ashwin!'; }
+  20% { content:'Happy Birthday Arvind!'; }
+  25% { content:'Happy Birthday Shubham!'; }
+  30% { content:'Happy Birthday Ilan!'; }
+  35% { content:'Happy Birthday Siddhanth!'; }
+  40% { content:'Happy Birthday Sarin!'; }
+  45% { content:'Happy Birthday Abhimanyu!'; }
+  50% { content:'Happy Birthday Sneha!'; }
+  55% { content:'Happy Birthday Naren!'; }
+  60% { content:'Happy Birthday Mohit!'; }
+  65% { content:'Happy Birthday Achu!'; }
+  70% { content:'Happy Birthday Shashank!'; }
+  75% { content:'Happy Birthday Ashwanth!'; }
+  80% { content:'Happy Birthday Neel!'; }
+  85% { content:'Happy Birthday Gunda!'; }
+  90% { content:'Happy Birthday Mone!'; }
+  95% { content:'Happy Birthday Raghav!'; }
+  100% { content:'Happy Birthday Tarun!'; }
+}
 p{
   color: #fff;
   font-family: "Source Sans Pro";
