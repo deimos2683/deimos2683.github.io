@@ -1,0 +1,90 @@
+  <head>
+    <title>BDays</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    
+   	<!-- Cache Control -->		
+	<meta http-equiv="Cache-control" content="No-Cache">	
+	<meta http-equiv='expires' content='0'>	
+	<meta http-equiv='pragma' content='no-cache'>	
+
+
+
+ 	<!-- OGP metdata 
+	<meta property="og:title" content="Control Systems | SR1100" />	
+	<meta property="og:locale" content="en" />	
+	<meta property="og:url" content="http://anveshak.team/" />	
+	<meta property="og:site_name" content="Team Anveshak" />	
+	<meta property="og:image" content="/assets/og.jpg" />
+	<meta property="og:description" content="by Shashank Ramesh, Team Anveshak" />-->	
+	
+  </head>
+  
+	<script>
+		function changevid(id) {
+		  document.getElementById("vid").src = id;
+		  var container = document.getElementById("outer");
+		  container.load();
+		}
+	</script>
+
+  <body>
+	  <div class="module">
+	    <a href="#" onclick="changevid('ab.html')">Abhishek</a>
+	    <a href="#" onclick="changevid('abc.html')">Gunda</a>
+	    <a href="#" onclick="changevid('sjh.html')">Sarin</a>
+	    <a href="#" onclick="changevid('sr.html')">Shashank</a>
+	    <a href="#" onclick="changevid('stp.html')">Tarun</a>
+	    <a href="#" onclick="changevid('vl.html')">Vaishnavi</a>
+
+	  </div>
+	  
+	  
+	  <iframe id='vid' src='index.html'></iframe>
+
+
+  </body>
+  
+<style>
+  body {
+  	padding-top:3%
+	}
+	
+  .module {
+	width: 20%;
+	padding: 3%;
+	font-family: sans-serif;
+	margin-bottom: 3%;
+	float:left;
+	color: black;
+	background-color: rgb(211, 123, 52);
+	height: auto;
+	}
+	.module a {
+	  background-color: #eee;
+	  font-family: sans-serif;
+	  color: black;
+	  display: block;
+	  padding: 12px;
+	  font-weight:bold;
+	 }
+	.module a:hover {
+	  background-color: #ccc;
+	}
+	.module a.active {
+	  background-color: rgb(199, 72, 14);
+	  color: white;
+	}
+  	
+ #vid{
+	float:right;
+	width: 60vw;
+	height: 40vw;
+	margin-right:5%;
+ }
+</style>
+  
+
+
+
+
+	
